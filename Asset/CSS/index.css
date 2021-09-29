@@ -1,0 +1,378 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video 
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section 
+{
+	display: block;
+}
+body 
+{
+	line-height: 1;
+}
+ol, ul 
+{
+	list-style: none;
+}
+blockquote, q 
+{
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after 
+{
+	content: '';
+	content: none;
+}
+table 
+{
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+* {
+	outline: none;
+}
+html{
+	box-sizing: border-box;
+    font-size: 62.5%;
+}
+*,*:after,*:before{
+	box-sizing: inherit;
+}
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXX FIN RESET XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300i,700');
+
+body{
+    font-family: 'Open Sans Condensed', sans-serif;
+    display: flex;
+    flex-direction: row;
+    color: black;
+    overflow-wrap: normal;
+    font-size: 3em;
+    line-height: 2;
+}
+/* section
+{
+    padding-top: 5%;
+} */
+header{
+    display: flex;
+    flex-direction: column;
+    /* flex-shrink: 1; */
+    padding-top: 5%;
+    overflow-wrap: normal;
+    background-color: rgb(100, 191, 183);
+    box-shadow: 55px 5px 5px 5px rgb(222, 220, 220);
+
+}
+.photo{
+    display: inline;
+    text-align: center;
+    margin-bottom: 10%;
+}
+img{
+    display: inline;
+    border: solid bisque;
+    border-radius: 50%;
+    box-shadow: 10px 5px 5px 5px rgb(0, 0, 0);
+    width: 250px;
+}
+.skills em{
+    color: black;
+}
+span{
+    color: bisque;
+}
+fieldset{
+    color: white;
+    margin-bottom: 5%;
+    border: 1px solid black;
+    box-shadow: 6px 5px 0px 5px rgb(0, 0, 0);
+    text-align: center;
+    overflow-wrap: normal;
+    width: 95%;
+    margin-bottom: 25%;
+}
+legend{
+    color: bisque;
+    font-size: 1.5em;
+    padding-bottom: 3%;
+}
+header fieldset i{
+    font-size: 1.5em;
+    color: bisque;
+    margin-bottom: 5%;
+}
+header fieldset p{
+    color: white;
+    font-size: 3rem;
+    margin-bottom: 3%;
+}
+/* .coordonées{
+    overflow-wrap: break-word;
+} */
+.centres_interet{
+    padding: 10px;
+}
+.languages{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+.parcours_pro > p{
+    padding-bottom: 15px;
+}
+.fa{
+    font-size: 2em;
+    color: white;
+}
+h1{
+    color: black;
+    margin: 2% 10% 10% 10%;
+    text-align: center;
+    font-size: 50px;
+    box-shadow: 10px 5px 5px 5px rgb(0, 0, 0);
+    overflow-wrap: normal;
+}
+h2{
+    color: rgb(255, 253, 253);
+    text-decoration: underline;
+    padding-bottom: 5%;
+}
+h3{
+    color: bisque;
+    display: inline;
+    float: left;
+    text-decoration: underline;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 1;
+    overflow-wrap: normal;
+}
+main article{
+    margin: 5% 5% 5% 5%;
+    box-shadow: 10px 5px 5px 5px rgb(0, 0, 0);
+    overflow-wrap: normal;
+    background-color: rgb(100, 191, 183);
+    padding: 10px;
+}
+aside{
+    width: 90%;
+    padding: 2%;
+    border-left: black solid 1px;
+    box-shadow: 5px 5px 5px 30px rgb(222, 220, 220);
+
+}
+aside h2{
+    color:black;
+    font-size: 24px;
+    margin-bottom: 25px;
+    font-weight: 700;
+}
+
+.skills {
+    width: inherit;
+    position: relative;
+    float: left;
+    padding: 30px 0;
+  }
+  .skills ul {
+    padding-top: 30px;
+  }
+  .skills ul > li {
+    margin-bottom: 50px;
+    background: #dedede;
+    height: 6px;
+  }
+  .skills ul > li em {
+    font-size: 18px;
+    position: relative;
+    top: -30px;
+  }
+  .skills ul > li span {
+    height: inherit;
+    background-color: #94c245;
+    background: linear-gradient(90deg, #76b82a, #aecd60);
+    position: absolute;
+  }
+  .skills .html5 {
+    width: 70%;
+    animation: html5 2s ease-out;
+  }
+  .skills .css3 {
+    width: 70%;
+    animation: css3 2s ease-out;
+  }
+  .skills .js {
+    width: 30%;
+    animation: js 2s ease-out;
+  }
+  .skills .php {
+    width: 65%;
+    animation: php 2s ease-out;
+  }
+  .skills .poo {
+    width: 40%;
+    animation: php 2s ease-out;
+  }
+  .skills .bootstrap {
+    width: 55%;
+    animation: bootstrap 2s ease-out;
+  }
+  .skills .wordpress {
+    width: 50%;
+    animation: wordpress 2s ease-out;
+  }
+  .skills .PrestaShop {
+    width: 50%;
+    animation: PrestaShop 2s ease-out;
+  }
+  .skills .photoshop {
+    width: 40%;
+    animation: photoshop 2s ease-out;
+  }
+  .skills .AfterEffect {
+    width: 50%;
+    animation: AfterEffect 2s ease-out;
+  }
+  .skills .PremierPro {
+    width: 60%;
+    animation: PremierPro 2s ease-out;
+  }
+  .skills .Filmora {
+    width: 80%;
+    animation: Filmora 2s ease-out;
+  }
+  .skills .FLStudio {
+    width: 75%;
+    animation: FLStudio 2s ease-out;
+  }
+
+@keyframes html5 {
+    0% {
+        width: 0px;
+    }
+    100% {
+        width: 70%;
+    }
+}
+@keyframes css3 {
+    0% {
+        width: 0px;
+    }
+    100% {
+        width: 70%;
+    }
+}
+@keyframes js {
+    0% {
+        width: 0px;
+    }
+    100% {
+        width: 50%;
+    }
+}
+@keyframes php {
+    0% {
+        width: 0px;
+    }
+    100% {
+        width: 60%;
+    }
+}
+@keyframes poo {
+    0% {
+        width: 0px;
+    }
+    100% {
+        width: 40%;
+    }
+}
+@keyframes bootstrap {
+    0% {
+        width: 0px;
+    }
+    100% {
+        width: 60%;
+    }
+}
+@keyframes wordpress {
+    0% {
+      width: 0px;
+    }
+    100% {
+      width: 50%;
+    }
+}
+@keyframes PrestaShop {
+    0% {
+        width: 0px;
+    }
+    100% {
+        width: 50%;
+    }
+}
+@keyframes photoshop {
+    0% {
+        width: 0px;
+    }
+    100% {
+        width: 40%;
+    }
+}
+@keyframes Filmora {
+    0% {
+        width: 0px;
+    }
+    100% {
+        width: 80%;
+    }
+}
+@keyframes AfterEffect {
+    0% {
+        width: 0px;
+    }
+    100% {
+        width: 50%;
+    }
+}
+@keyframes PremierPro {
+    0% {
+        width: 0px;
+    }
+    100% {
+        width: 60%;
+    }
+}
+@keyframes FLStudio {
+    0% {
+        width: 0px;
+    }
+    100% {
+        width: 75%;
+    }
+}
